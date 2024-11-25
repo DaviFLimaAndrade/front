@@ -74,14 +74,15 @@ const CadastroTarefa = () => {
         <nav>
           <a href="/">Cadastro de Usuários</a>
           <a href="/gerenciar-tarefas">Gerenciar Tarefas</a>
-          <a href="/cadastrar_tarefas">Cadastrar Tarefa</a>
+          <a href="/cadastrar-tarefas">Cadastrar Tarefa</a>
         </nav>
       </header>
 
       <div className="container">
-        <h2>Cadastro de Tarefa</h2>
+        
         {loading && <p>Carregando...</p>} {/* Exibindo carregamento */}
         <form onSubmit={handleSubmit}>
+        <h2>Cadastro de Tarefa</h2>
           <div>
             <label>Descrição:</label>
             <input

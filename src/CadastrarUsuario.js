@@ -37,31 +37,35 @@ const CadastroUsuario = () => {
           <a href="gerenciar-tarefas">Gerenciar Tarefas</a>
         </nav>
       </header>
+      <div className="content">
       <div className="container">
-        <h2>Cadastro de Usuários</h2>
+        
         <form onSubmit={handleSubmit}>
           <div>
-            <label>Nome:</label>
+          <h2>Cadastro de Usuários</h2>
             <input
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
+              placeholder="Nome"
             />
           </div>
           <div>
-            <label>Email:</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              placeholder="Email"
             />
           </div>
           <button type="submit">Cadastrar</button>
         </form>
         {message && <p>{message}</p>}
       </div>
+      </div>
+      
     </div>
   );
 };
